@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+* {
+  color:white;
+  font-size: 16pt;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  /* temp color before animation */
+  background-color: rgb(46,139,192);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background {
+  /* Optional image instead of solid color */
+  /* background-image: url("./bricks.png"); */
+
+  /* Create the parallax scrolling effect */
+  /* background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; */
+
+  background-color: rgb(84, 160, 204);
+  min-height: 100vh; 
+
+  animation: fadeIn 1.5s ease-out;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.tt {
+  min-height:100vh;
+  font-size:36px;
+}
+
+nav, .title {
+  position: absolute;
+  top:6%;
+  width:100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+nav span {
+  text-decoration:underline;
+  animation: slideUp .8s ease-out;
+  z-index: 9999;
+  padding: 0 0 0 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.left {
+  display: flex;
+  justify-content: space-around;
+  min-width: 250px;
+  padding: 0 40px 0 0 ;
+}
+
+.title {
+  top:25%;
+  animation: slideUp .8s ease-out;
+}
+
+.titleText {
+  font-size: 50pt;
+  padding: 0 0 0 40px;
+}
+
+.subtitleText {
+  font-size: 16pt;
+  color: rgba(255, 255, 255, .8);
+  padding: 0 0 0 40px;
+  animation: fadeIn 4s, ease-out;
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0 } 
+  100% { opacity: 1 }
+}
+
+@keyframes slideUp {
+  0%, 30% {
+      transform:translateY(50%);
+      opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      transform:translateY(0%)
   }
 }
