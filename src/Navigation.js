@@ -5,7 +5,7 @@ function Navigation() {
         <nav>
             <span>Something</span>
 
-            <div className="left">
+            <div className="links">
                 <span>
                     <Link to="/">Home</Link>
                 </span>

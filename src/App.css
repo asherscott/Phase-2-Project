@@ -8,7 +8,7 @@ body {
   background-color: rgb(46,139,192);
 }
 
-.background {
+.homeBackground, .aboutBackground, .usersBackground {
   /* Optional image instead of solid color */
   /* background-image: url("./bricks.png"); */
 
@@ -24,12 +24,12 @@ body {
   animation: fadeIn 1.5s ease-out;
 }
 
-.tt {
+.homeFooter, .aboutFooter, .usersFooter {
   min-height:100vh;
   font-size:36px;
 }
 
-nav, .title {
+nav, .homeTitle {
   position: absolute;
   top:6%;
   width:100%;
@@ -37,21 +37,7 @@ nav, .title {
   justify-content: space-between;
 }
 
-nav span {
-  text-decoration:underline;
-  animation: slideUp .8s ease-out;
-  z-index: 9999;
-  padding: 0 0 0 40px;
-}
-
-.left {
-  display: flex;
-  justify-content: space-around;
-  min-width: 250px;
-  padding: 0 40px 0 0 ;
-}
-
-.title {
+.homeTitle {
   top:25%;
   animation: slideUp .8s ease-out;
 }
@@ -67,6 +53,42 @@ nav span {
   padding: 0 0 0 40px;
   animation: fadeIn 4s, ease-out;
 }
+
+nav span {
+  text-decoration:underline;
+  animation: slideUp .8s ease-out;
+  z-index: 9999;
+  padding: 0 0 0 40px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  min-width: 250px;
+  padding: 0 40px 0 0 ;
+}
+
+
+/* About Page */
+.aboutBackground {
+  background-color: rgb(99, 99, 99);
+}
+
+.aboutFooter {
+  background-color: rgb(70, 70, 70);
+}
+
+
+/* About Page */
+.usersBackground {
+  background-color: rgb(196, 71, 113);
+}
+
+.usersFooter {
+  background-color: rgb(138, 51, 80);
+}
+
+
 
 @keyframes fadeIn {
   0%   { opacity: 0 } 
