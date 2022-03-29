@@ -1,0 +1,43 @@
+.card, .top {
+    border:3px solid black;
+    min-width:200px;
+    flex: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.top {
+    flex-direction: row;
+}
+
+img {
+    border:3px solid black;
+    min-width: 128px;
+    min-height: 128px;
+}
+
+p {
+    border:3px solid black;
+    font-size: 12pt;
+}
+
+.photo {
+    border:3px solid black;
+    display: flex;
+    flex-flow: column;
+}
+
+.idInfo {
+    border:3px solid black;
+    display: flex;
+    flex-flow: column;
+}
+
+.name {
+    text-align: center;
+}
+
+.bottom p {
+    height: 200px;
+}
