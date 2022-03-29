@@ -3,7 +3,7 @@ import './Characters.css';
 
 function Characters() {
     return (
-        <div>
+        <div id="charContent">
             <div className="charBackground"></div>
 
             <div id="charBody">

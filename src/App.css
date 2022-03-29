@@ -30,13 +30,7 @@
   font-size:36px;
 }
 
-nav, .homeTitle {
-  position: absolute;
-  top:6%;
-  width:100%;
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .homeTitle {
   top:25%;

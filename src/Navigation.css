@@ -1,0 +1,28 @@
+nav span {
+	text-decoration:underline;
+	animation: slideUp .8s ease-out;
+	z-index: 9999;
+	padding: 0 0 0 40px;
+    color:white;
+    font-size: 16pt;
+  }
+  
+  .links {
+	display: flex;
+	justify-content: space-around;
+	min-width: 250px;
+	padding: 0 40px 0 0 ;
+  }
+
+  nav {
+	position: absolute;
+	top:6%;
+	width:100%;
+	display: flex;
+	justify-content: space-between;
+  }
+
+  a {
+    color:white;
+    font-size: 16pt;
+  }

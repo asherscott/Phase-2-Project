@@ -9,6 +9,10 @@
   background-size: cover;
 
   min-height: 200vh; 
+
+  opacity: .5 ;
+
+  animation: fadeIn 1.5s ease-out;
 }
   
 .charCards {
@@ -24,4 +28,10 @@
 #charBody {
   display: flex;
   justify-content: center;
+}
+
+#charContent {
+  background-color: rgb(84, 160, 204);
+  color:white;
+  font-size: 16pt;
 }
