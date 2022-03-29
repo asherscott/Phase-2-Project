@@ -3,17 +3,17 @@ import { Link } from "react-router-dom"
 function Navigation() {
     return (
         <nav>
-            <span>Something</span>
+            <span>Logo Here</span>
 
             <div className="links">
                 <span>
                     <Link to="/">Home</Link>
                 </span>
                 <span>
-                    <Link to="/about">About</Link>
+                    <Link to="/characters">Characters</Link>
                 </span>
                 <span>
-                    <Link to="/users">Users</Link>
+                    <Link to="/users">Tips and Tricks</Link>
                 </span>
             </div>
         </nav>

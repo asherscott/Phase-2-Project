@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import React from "react";
 import './App.css';
 import Home from './Home';
-import About from './About';
+import Characters from './Characters';
 import Users from './Users';
 import Navigation from './Navigation';
 
@@ -13,8 +13,8 @@ export default function App() {
         <Navigation />
 
         <Switch>
-          <Route path="/about">
-            <About />
+          <Route path="/characters">
+            <Characters />
           </Route>
           <Route path="/users">
             <Users />

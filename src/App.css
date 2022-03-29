@@ -1,6 +1,12 @@
+/* @font-face {
+  font-family: stardew;
+  src: url(./Stardew_Valley.ttf);
+} */
+
 * {
   color:white;
   font-size: 16pt;
+  /* font-family: stardew; */
 }
 
 body {
@@ -8,7 +14,7 @@ body {
   background-color: rgb(46,139,192);
 }
 
-.homeBackground, .aboutBackground, .usersBackground {
+.homeBackground, .charBackground, .usersBackground {
   /* Optional image instead of solid color */
   /* background-image: url("./bricks.png"); */
 
@@ -19,12 +25,13 @@ body {
   background-size: cover; */
 
   background-color: rgb(84, 160, 204);
+  opacity: .5 ;
   min-height: 100vh; 
 
   animation: fadeIn 1.5s ease-out;
 }
 
-.homeFooter, .aboutFooter, .usersFooter {
+.homeFooter, .usersFooter {
   min-height:100vh;
   font-size:36px;
 }
@@ -69,17 +76,7 @@ nav span {
 }
 
 
-/* About Page */
-.aboutBackground {
-  background-color: rgb(99, 99, 99);
-}
-
-.aboutFooter {
-  background-color: rgb(70, 70, 70);
-}
-
-
-/* About Page */
+/* Users Page */
 .usersBackground {
   background-color: rgb(196, 71, 113);
 }
@@ -92,7 +89,7 @@ nav span {
 
 @keyframes fadeIn {
   0%   { opacity: 0 } 
-  100% { opacity: 1 }
+  100% { opacity: .5 }
 }
 
 @keyframes slideUp {
