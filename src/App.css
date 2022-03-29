@@ -4,37 +4,36 @@
 } */
 
 /* body { */
-  /* temp color before animation */
-  /* background-color: rgb(46,139,192);
+/* temp color before animation */
+/* background-color: rgb(46,139,192);
 } */
 
 /* .homeBackground, .aboutBackground, .usersBackground { */
-  /* Optional image instead of solid color */
-  /* background-image: url("./bricks.png"); */
+/* Optional image instead of solid color */
+/* background-image: url("./bricks.png"); */
 
-  /* Create the parallax scrolling effect */
-  /* background-attachment: fixed;
+/* Create the parallax scrolling effect */
+/* background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover; */
 
-  /* background-color: rgb(84, 160, 204);
+/* background-color: rgb(84, 160, 204);
   opacity: .5 ;
   min-height: 100vh; 
 
   animation: fadeIn 1.5s ease-out;
 } */
 
-.homeFooter, .usersFooter {
-  min-height:100vh;
-  font-size:36px;
+.homeFooter,
+.usersFooter {
+  min-height: 100vh;
+  font-size: 36px;
 }
 
-
-
 .homeTitle {
-  top:25%;
-  animation: slideUp .8s ease-out;
+  top: 25%;
+  animation: slideUp 0.8s ease-out;
 }
 
 .titleText {
@@ -44,14 +43,14 @@
 
 .subtitleText {
   font-size: 16pt;
-  color: rgba(255, 255, 255, .8);
+  color: rgba(255, 255, 255, 0.8);
   padding: 0 0 0 40px;
   animation: fadeIn 4s, ease-out;
 }
 
 nav span {
-  text-decoration:underline;
-  animation: slideUp .8s ease-out;
+  text-decoration: underline;
+  animation: slideUp 0.8s ease-out;
   z-index: 9999;
   padding: 0 0 0 40px;
 }
@@ -60,9 +59,8 @@ nav span {
   display: flex;
   justify-content: space-around;
   min-width: 250px;
-  padding: 0 40px 0 0 ;
-} 
-
+  padding: 0 40px 0 0;
+}
 
 /* Users Page */
 /* .usersBackground {
@@ -72,8 +70,6 @@ nav span {
 .usersFooter {
   background-color: rgb(138, 51, 80);
 } */
-
-
 
 /* @keyframes fadeIn {
   0%   { opacity: 0 } 
