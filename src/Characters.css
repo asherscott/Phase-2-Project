@@ -8,15 +8,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  min-height: 200vh;
+  min-height: 250vh;
 
   opacity: 0.5;
 
   animation: fadeIn 1s ease-out;
 }
 
-.charCards {
-  border: 3px solid black;
+#charList {
   position: absolute;
   top: 18%;
   width: 95vw;
@@ -25,9 +24,9 @@
   flex-wrap: wrap;
 }
 
-#charBody {
-  display: flex;
-  justify-content: center;
+#charList {
+  flex-direction: column;
+  width: auto;
 }
 
 #charContent {
