@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
 import Comment from "./Comment";
 import "./Users.css";
+import CommentForm from "./CommentForm";
 
 function Users() {
   const [comments, setComments] = useState([]);
+  const [showForm, setShowForm] = useState(false);
+
+  function handleClick() {
+    setShowForm(!showForm);
+  }
 
   useEffect(() => {
     fetch("http://localhost:3000/comments")
@@ -16,8 +22,14 @@ function Users() {
   });
 
   return (
-    <div id="commentBody">
-      <div id="commentSection">{displayComments}</div>
+    <div id="pageBackground">
+      <div id="commentBody">
+        <button onClick={handleClick}>
+          {!showForm ? "Leave a Comment!" : "Hide Comment Form"}
+        </button>
+        {showForm ? <CommentForm /> : null}
+        <div id="commentSection">{displayComments}</div>
+      </div>
     </div>
   );
 }

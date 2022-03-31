@@ -1,16 +1,15 @@
 #commentSection,
-#commentBody {
-  border: 3px solid black;
+#pageBackground {
   background-color: rgb(84, 160, 204);
 }
 
-#commentBody {
+#pageBackground {
   min-height: 100vh;
   min-width: 100vw;
+  border: 3px solid black;
 }
 
 #commentSection {
   display: flex;
   flex-flow: wrap column;
-  /* margin: 100px 0 0 0; */
 }
