@@ -1,47 +1,61 @@
-body{
-    font: 100% / 1.5 Arial;
+body {
+  font: 100% / 1.5 Arial;
 }
 #background {
- /* min-height: 1000px; */
-  /* background-image: url(https://preview.redd.it/6sgzg1no74e41.png?width=960&crop=smart&auto=webp&s=50edef4c58b017aae1633e1db689bbfffefa59e8); */
-  /* /* background-size:cover; */
+  min-height: 1000px;
+  background-image: url(https://preview.redd.it/6sgzg1no74e41.png?width=960&crop=smart&auto=webp&s=50edef4c58b017aae1633e1db689bbfffefa59e8);
+  background-size: cover;
   height: 2000px;
   width: 2000px;
   background-repeat: repeat-y;
 }
 div {
-    display: block;
+  display: block;
 }
 .title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .image {
-    width: 900px;
-    display: block;
-    margin:0px auto;
+  width: 900px;
+  display: block;
+  margin: 0px auto;
 }
 
-.parallax {
-    perspective: 1px;
-    height: 300vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-  .parallax__layer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  .parallax__layer--base {
-    transform: translateZ(0);
-  }
-  .parallax__layer--back {
-    transform: translateZ(-1px);
-  }
+/* .parallax {
+  perspective: 1px;
+  height: 300vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+} */
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px);
+}
+#commentSection,
+#pageBackground {
+  background-color: rgb(84, 160, 204);
+}
+
+#pageBackground {
+  min-height: 100vh;
+  min-width: 100vw;
+  border: 3px solid black;
+}
+
+#commentSection {
+  display: flex;
+  flex-flow: wrap column;
+}

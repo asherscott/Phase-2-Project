@@ -1,0 +1,43 @@
+/* form div {
+  width: 80px;
+} */
+
+form {
+  margin: 50px 0 20px 10px;
+  padding: 10px 0 10px 0;
+}
+
+.submitBtn {
+  margin: 0 0 0 15px;
+}
+
+.inputTitle,
+.inputBody {
+  background-color: transparent;
+  border: 3px solid black;
+}
+
+::placeholder {
+  color: rgb(104, 47, 0);
+}
+
+.inputTitle {
+  font-weight: bold;
+}
+
+.inputBody {
+  width: 90%;
+  height: 70px;
+}
+
+.submitBtn {
+  border: none;
+  background-color: rgb(243, 204, 145);
+  border-radius: 5px;
+  color: rgb(104, 47, 0);
+  font-weight: bold;
+}
+.formImg {
+  height: 25px;
+  width: auto;
+}

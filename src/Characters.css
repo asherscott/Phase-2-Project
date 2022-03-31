@@ -1,22 +1,38 @@
-
-
 .charBackground {
-  background-image: url("charBackground.jpg");
-  background-repeat: repeat;
-  min-height: 1650px; 
-}
-  
-.charCards {
-  border:3px solid black;
-  position: absolute;
-  top:18%;
-  width: 95vw;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  background-image: url("https://crackgods.com/wp-content/uploads/2019/03/Stardew-Valley-crack.jpg");
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 100vh;
+
+  opacity: 0.5;
+
+  animation: fadeIn 1s ease-out;
 }
 
-#charBody {
-  display: flex;
-  justify-content: center;
+#charList {
+  position: absolute;
+  top: 18%;
+  height: 75vh;
+  width: 250px;
+  overflow-y: auto;
+}
+
+#charContent {
+  background-color: rgb(84, 160, 204);
+  color: white;
+  font-size: 16pt;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }
