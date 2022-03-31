@@ -25,12 +25,12 @@
   animation: fadeIn 1.5s ease-out;
 } */
 
-.homeFooter, .usersFooter {
+/* .homeFooter, .usersFooter {
   min-height:100vh;
   font-size:36px;
-}
+} */
 
-nav, .homeTitle {
+/* nav, .homeTitle {
   position: absolute;
   top:6%;
   width:100%;
@@ -53,7 +53,7 @@ nav, .homeTitle {
   color: rgba(255, 255, 255, .8);
   padding: 0 0 0 40px;
   animation: fadeIn 4s, ease-out;
-}
+} */
 
 nav span {
   text-decoration:underline;
@@ -68,30 +68,3 @@ nav span {
   min-width: 250px;
   padding: 0 40px 0 0 ;
 } 
-
-
-/* Users Page */
-/* .usersBackground {
-  background-color: rgb(196, 71, 113);
-}
-
-.usersFooter {
-  background-color: rgb(138, 51, 80);
-} */
-
-
-
-/* @keyframes fadeIn {
-  0%   { opacity: 0 } 
-  100% { opacity: .5 }
-}
-
-@keyframes slideUp {
-  0%, 30% {
-      transform:translateY(50%);
-      opacity: 0;
-  }
-  100% {
-      transform:translateY(0%)
-  }
-} */

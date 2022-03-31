@@ -1,24 +1,27 @@
+import "./Users.css"
+
+
 function Users() {
     return (
-        <div>
-            <div>
-                <div className="usersBackground"></div>
-    
-                <div className="homeTitle">
-                    <div>
-                        <span className="titleText">Enter Title</span>
-                        <br />
-                        <span className="titleText">More Title Here Enter</span>
-                        <br />
-                        <span className="subtitleText">Also Some Title Text Here</span>
-                    </div>
-                </div>
+        <div className="parallax">
+            <div  className="background parallax_layer parallax__layer--back">
+                 <img className="title" id="background" src={"https://preview.redd.it/6sgzg1no74e41.png?width=960&crop=smart&auto=webp&s=50edef4c58b017aae1633e1db689bbfffefa59e8"}/> 
             </div>
-        
-            <div className="usersFooter">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div className="image parallax_layer parallax__layer--base">
+                <img className="image" src={"https://i.pinimg.com/564x/5b/7b/80/5b7b80e77be061cd9d621904b044692f.jpg"}/>
+                <img className="image" src={"https://preview.redd.it/fuqjemqby1951.jpg?width=640&crop=smart&auto=webp&s=8da0b9e79f9053b7f01b61fef65423c8b737595e"}/>
+                <img className="image" src={"https://i.redd.it/r1cvm4n8ank41.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/4NZWx6H/Minerals1.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/xJkGJ3q/Minerals2.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/DW9YTLz/Minerals3.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/sF4Nnyh/Minerals4.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/txdFGCg/Artifacts1.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/1KRKhSg/Artifacts2.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/zRhvzTq/Artifacts3.jpg"}/>
+                <img className="image" src={"https://i.ibb.co/R3rfYF7/Artifacts4.jpg"}/>
             </div>
         </div>
+
     );
 }
 

@@ -1,14 +1,9 @@
-/* Character Page */
+
+
 .charBackground {
-  background-image: url("https://crackgods.com/wp-content/uploads/2019/03/Stardew-Valley-crack.jpg");
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: no-repeat; 
-  background-size: cover;
-
-  min-height: 200vh; 
+  background-image: url("charBackground.jpg");
+  background-repeat: repeat;
+  min-height: 1650px; 
 }
   
 .charCards {
