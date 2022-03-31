@@ -6,7 +6,7 @@ function CharacterCard({ character }) {
     <div className="card">
       <div className="top">
         <div className="photo">
-          <p className="name">{character.name}</p>
+          <p className="cardName">{character.name}</p>
           <img id="photoId" src={character.image} alt={character.name} />
         </div>
 
@@ -18,7 +18,7 @@ function CharacterCard({ character }) {
       </div>
 
       <div className="bottom">
-        <p>favorites</p>
+        <p>Favorites:</p>
       </div>
     </div>
   );

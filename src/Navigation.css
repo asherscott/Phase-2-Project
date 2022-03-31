@@ -20,11 +20,21 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  float: left;
+  z-index: 999;
 }
 
 a {
   color: white;
   font-size: 16pt;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.logo {
+  height: 35px;
+  opacity: 0.7;
 }
 
 @keyframes slideUp {

@@ -8,7 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  min-height: 250vh;
+  min-height: 100vh;
 
   opacity: 0.5;
 
@@ -18,15 +18,9 @@
 #charList {
   position: absolute;
   top: 18%;
-  width: 95vw;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-#charList {
-  flex-direction: column;
-  width: auto;
+  height: 75vh;
+  width: 250px;
+  overflow-y: auto;
 }
 
 #charContent {
