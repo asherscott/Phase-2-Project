@@ -1,21 +1,23 @@
+import { useEffect, useState } from "react";
+import Comment from "./Comment";
+import "./Users.css";
+
 function Users() {
+  const [comments, setComments] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/comments")
+      .then((res) => res.json())
+      .then((comms) => setComments(comms));
+  }, []);
+
+  const displayComments = comments.map((comment) => {
+    return <Comment key={comment.id} comment={comment} />;
+  });
+
   return (
-    <div>
-      <div>
-        <div className="usersBackground"></div>
-
-        <div className="homeTitle">
-          <div>
-            <span className="titleText">Enter Title</span>
-            <br />
-            <span className="titleText">MotestingSDSDEnter</span>
-            <br />
-            <span className="subtitleText">Alsosdfdfg</span>
-          </div>
-        </div>
-      </div>
-
-      <div className="usersFooter">TESTING</div>
+    <div id="commentBody">
+      <div id="commentSection">{displayComments}</div>
     </div>
   );
 }

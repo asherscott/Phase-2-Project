@@ -1,0 +1,17 @@
+.commentBlock {
+  border: 3px solid black;
+  margin: 0 0 20px 10px;
+}
+
+.commentHead {
+  display: flex;
+  flex-direction: row;
+}
+
+.commentTitle {
+  margin: 0;
+}
+
+.commentRemark {
+  margin: 0;
+}
