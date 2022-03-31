@@ -1,7 +1,17 @@
 import "./CharacterCard.css";
 
 function CharacterCard({ character }) {
-  //   const { name, image, town, address, birthday, favorites } = character;
+  const renderFavs = character.favorites
+    ? character.favorites.map((fav) => {
+        return (
+          <li className="favItem" key={Object.keys(fav)[0]}>
+            <img className="favImg" src={Object.values(fav)[0]} />
+            <span>{Object.keys(fav)[0]}</span>
+          </li>
+        );
+      })
+    : null;
+
   return (
     <div className="card">
       <div className="top">
@@ -18,7 +28,7 @@ function CharacterCard({ character }) {
       </div>
 
       <div className="bottom">
-        <p>Favorites:</p>
+        <ul>Favorites: {renderFavs}</ul>
       </div>
     </div>
   );

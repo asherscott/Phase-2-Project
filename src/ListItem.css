@@ -18,17 +18,17 @@
   display: none;
 }
 
-li {
+.listItem {
   padding: 2px 0 0 0;
   width: fit-content;
 }
 
-li:hover {
+.listItem:hover {
   cursor: pointer;
   transform: translateX(10px);
 }
 
-li:hover .selected {
+.listItem:hover .selected {
   display: inline;
 }
 

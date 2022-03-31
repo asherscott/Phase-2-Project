@@ -8,7 +8,11 @@ function ListItem({ character, setDisplayCard, displayCard }) {
   return (
     <li
       onClick={handleClick}
-      className={displayCard.name === character.name ? "charSelected" : ""}
+      className={
+        displayCard.name === character.name
+          ? "charSelected listItem"
+          : "listItem"
+      }
     >
       <img className="smallImg" src={character.image} />
       <span className="name">{character.name}</span>
