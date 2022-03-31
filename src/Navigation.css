@@ -14,6 +14,10 @@ nav span {
   padding: 0 40px 0 0;
 }
 
+.links span {
+  display: flex;
+}
+
 nav {
   position: absolute;
   top: 6%;
@@ -21,7 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: 0;
+  top: 10px;
   float: left;
   z-index: 999;
 }
@@ -30,9 +34,17 @@ a {
   color: white;
   font-size: 16pt;
   text-shadow: 2px 2px 4px #000000;
+  padding: 0 10px 0 0;
 }
 
-.logo {
+a:hover + .linkImg {
+  animation: rotate 2s linear infinite;
+  opacity: 1;
+  filter: drop-shadow(0 0.2rem 0.25rem rgba(219, 229, 43, 0.2));
+}
+
+.logo,
+.linkImg {
   height: 35px;
   opacity: 0.7;
 }
@@ -45,5 +57,18 @@ a {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-15deg);
   }
 }
