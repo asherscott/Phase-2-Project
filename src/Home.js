@@ -10,7 +10,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="div-1">
+      <div className="div-2">
         <h3 className="h3">Welcome to Stardew Valley!</h3>
         <p className="p">
           You’ve inherited your grandfather’s old farm plot in Stardew Valley.
@@ -31,10 +31,13 @@ function Home() {
       </div>
 
       <div className="position">
-        <div className="div-1">
+        <div className="div-2">
           <p className="p">
-            Scroll up and down to really get the feeling of how Parallax
-            Scrolling works.
+          As you make your way from a struggling greenhorn to a master farmer, 
+          you’ll level up in 5 different areas: farming, mining, combat, fishing, 
+          and foraging. As you progress, you’ll learn new cooking and crafting 
+          recipes, unlock new areas to explore, and customize your skills by choosing 
+          from a variety of professions.
           </p>
         </div>
       </div>
@@ -48,8 +51,12 @@ function Home() {
       <div className="position">
         <div className="div-2">
           <p className="p">
-            Scroll up and down to really get the feeling of how Parallax
-            Scrolling works.
+          With over 30 unique characters living in Stardew Valley, you won’t have a 
+          problem finding new friends! Each person has their own daily schedule, 
+          birthday, unique mini-cutscenes, and new things to say throughout the week 
+          and year. As you make friends with them, they will open up to you, ask you 
+          for help with their personal troubles, or tell you their secrets! Take part 
+          in seasonal festivals such as the luau, haunted maze, and feast of the winter star.
           </p>
         </div>
       </div>

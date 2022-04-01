@@ -9,7 +9,8 @@ function CommentForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+  <div className="formDiv">
+    <form className="form" onSubmit={handleSubmit}>
       <div className="formHeader">
         <ReactStars
           {...{
@@ -40,6 +41,7 @@ function CommentForm() {
       <br />
       <input className="submitBtn" type="submit"></input>
     </form>
+  </div>
   );
 }
 
