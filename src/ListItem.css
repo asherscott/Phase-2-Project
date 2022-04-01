@@ -34,9 +34,9 @@
 
 .charSelected {
   transform: translateX(10px);
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  bottom: 0;
+  bottom: 0; */
 }
 
 .charSelected .selected {

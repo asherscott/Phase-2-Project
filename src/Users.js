@@ -18,26 +18,41 @@ function Users() {
   }, []);
 
   const displayComments = comments.map((comment) => {
-    return <Comment key={comment.id} comment={comment} />;
+    return (
+      <Comment
+        key={comment.id}
+        comment={comment}
+        setComments={setComments}
+        comments={comments}
+      />
+    );
   });
 
   return (
-    <div>
-        <div className="background ">
-          <img src/>
-          <img className="image" src={"https://i.pinimg.com/564x/5b/7b/80/5b7b80e77be061cd9d621904b044692f.jpg"}/>
-          <img className="image" src={"https://i.redd.it/r1cvm4n8ank41.jpg"} />
-        </div>
+    <div className="parallax">
+      <div className="image parallax_layer parallax__layer--base">
+        <img
+          className="image firstImg"
+          src={
+            "https://i.pinimg.com/564x/5b/7b/80/5b7b80e77be061cd9d621904b044692f.jpg"
+          }
+        />
+        <img className="image" src={"https://i.redd.it/r1cvm4n8ank41.jpg"} />
+      </div>
 
       <div id="pageBackground">
         <div id="commentBody">
-          <button onClick={handleClick}>
-            {!showForm ? "Leave a Comment!" : "Hide Comment Form"}
-          </button>
-          {showForm ? <CommentForm /> : null}
+          <div className="showForm">
+            <button onClick={handleClick}>
+              {!showForm ? "Leave a Comment!" : "Hide Comment Form"}
+            </button>
+          </div>
+
+          {showForm ? <CommentForm setComments={setComments} /> : null}
           <div id="commentSection">{displayComments}</div>
         </div>
       </div>
+      <div id="background"></div>
     </div>
   );
 }
