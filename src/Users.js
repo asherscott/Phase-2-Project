@@ -18,7 +18,14 @@ function Users() {
   }, []);
 
   const displayComments = comments.map((comment) => {
-    return <Comment key={comment.id} comment={comment} />;
+    return (
+      <Comment
+        key={comment.id}
+        comment={comment}
+        setComments={setComments}
+        comments={comments}
+      />
+    );
   });
 
   return (
@@ -73,7 +80,7 @@ function Users() {
           <button onClick={handleClick}>
             {!showForm ? "Leave a Comment!" : "Hide Comment Form"}
           </button>
-          {showForm ? <CommentForm /> : null}
+          {showForm ? <CommentForm setComments={setComments} /> : null}
           <div id="commentSection">{displayComments}</div>
         </div>
       </div>

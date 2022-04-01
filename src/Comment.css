@@ -38,3 +38,19 @@ form {
 .empty {
   filter: grayscale();
 }
+
+.headRight {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 10px 0 0;
+}
+
+.deleteBtn {
+  display: none;
+  cursor: pointer;
+}
+
+.commentBlock:hover .deleteBtn {
+  display: block;
+}
