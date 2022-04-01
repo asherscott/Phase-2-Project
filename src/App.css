@@ -1,3 +1,20 @@
 * {
   box-sizing: border-box;
 }
+
+::-webkit-scrollbar {
+  /* width: 2px;
+  height: 2px; */
+  /* color: aqua; */
+  background-color: rgba(255, 201, 121, 1);
+}
+::-webkit-scrollbar-thumb {
+  width: 2px;
+  height: 2px;
+  background-color: rgb(135, 61, 2);
+}
+
+button:hover {
+  cursor: pointer;
+  filter: brightness(1.1);
+}

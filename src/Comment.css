@@ -1,6 +1,6 @@
 .commentBlock,
 form {
-  margin: 0 0 20px 10px;
+  margin: 0 auto 20px auto;
   padding: 0 0 10px 0;
   width: 60%;
   background: rgb(235, 168, 103);
@@ -49,6 +49,8 @@ form {
 .deleteBtn {
   display: none;
   cursor: pointer;
+  color: rgb(243, 204, 145);
+  background-color: rgba(135, 61, 2, 1);
 }
 
 .commentBlock:hover .deleteBtn {
